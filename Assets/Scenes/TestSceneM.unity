@@ -776,6 +776,22 @@ PrefabInstance:
       propertyPath: useUI
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 110557099479726783, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 110557099479726783, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 110557099479726783, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 0.93333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 110557099479726783, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 124.22

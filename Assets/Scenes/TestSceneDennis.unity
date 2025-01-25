@@ -935,6 +935,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
   m_PrefabInstance: {fileID: 1065578273}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1097460583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 627556911, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
+  m_PrefabInstance: {fileID: 1065578273}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fefceefe666bb4682b272ec8c5bdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1098548026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1145,7 @@ GameObject:
   - component: {fileID: 1452296736}
   - component: {fileID: 1452296735}
   - component: {fileID: 1452296734}
+  - component: {fileID: 1452296738}
   m_Layer: 0
   m_Name: CinemachineCamera (Follow)
   m_TagString: Untagged
@@ -1247,6 +1259,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1667040651}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1452296738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452296733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db414b4382c2fb94b971e253559450f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carController: {fileID: 1097460583}
+  carCamTransform: {fileID: 1452296737}
 --- !u!1 &1525643160
 GameObject:
   m_ObjectHideFlags: 0

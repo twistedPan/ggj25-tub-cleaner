@@ -130,6 +130,8 @@ public class PrometeoCarController : MonoBehaviour
     public bool isDrifting; // Used to know whether the car is drifting or not.
     [HideInInspector]
     public bool isTractionLocked; // Used to know whether the traction of the car is locked or not.
+    [HideInInspector]
+    public Vector3 CarVelocityForward;
 
     //PRIVATE VARIABLES
 
@@ -409,6 +411,8 @@ public class PrometeoCarController : MonoBehaviour
         // We call the method AnimateWheelMeshes() in order to match the wheel collider movements with the 3D meshes of the wheels.
         AnimateWheelMeshes();
 
+        CarVelocityForward = carRigidbody.linearVelocity * Vector3.Dot(carRigidbody.linearVelocity.normalized, transform.forward);
+        Debug.DrawRay(transform.position, CarVelocityForward * 10, Color.green);
     }
 
     // This method converts the car speed data from float to string, and then set the text of the UI carSpeedText with this value.

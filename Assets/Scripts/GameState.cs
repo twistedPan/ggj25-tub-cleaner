@@ -14,6 +14,7 @@ public class GameState : MonoBehaviour
 
     [SerializeField]
     private float _timeLeft;
+    private bool _gameOver = false;
 
     // List of stains
     [SerializeField]
@@ -144,6 +145,11 @@ public class GameState : MonoBehaviour
         {
             _timeLeft = 0;
             LevelTimerText.text = "0";
+            
+            if (!_gameOver) {
+                _gameOver = true;
+                OnGameOver();
+            }
         }
 
         // Warn if amount of total soap is less than remaining dirt strength

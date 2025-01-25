@@ -144,6 +144,7 @@ public class PrometeoCarController : MonoBehaviour
     float driftingAxis;
     float localVelocityZ;
     float localVelocityX;
+    float driftThreshold = 15f;
     bool deceleratingCar;
     bool touchControlsSetup = false;
     /*
@@ -174,7 +175,7 @@ public class PrometeoCarController : MonoBehaviour
     {
 
         _gameState = GameObject.Find("GameState").GetComponent<GameState>();
-        soapyDriftModifier = _gameState.SoapAmount / _gameState.SoapCapacity;
+        soapyDriftModifier = _gameState.SoapAmount / 100;
 
         //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
         //gameObject. Also, we define the center of mass of the car with the Vector3 given
@@ -295,7 +296,7 @@ public class PrometeoCarController : MonoBehaviour
         // We determine the speed of the car.
         carSpeed = (2 * Mathf.PI * frontLeftCollider.radius * frontLeftCollider.rpm * 60) / 1000;
         // Save the local velocity of the car in the x axis. Used to know if the car is drifting.
-        localVelocityX = transform.InverseTransformDirection(carRigidbody.linearVelocity).x + soapyDriftModifier;
+        localVelocityX = transform.InverseTransformDirection(carRigidbody.linearVelocity).x * (1+soapyDriftModifier);
         // Save the local velocity of the car in the z axis. Used to know if the car is going forward or backwards.
         localVelocityZ = transform.InverseTransformDirection(carRigidbody.linearVelocity).z;
 
@@ -423,6 +424,8 @@ public class PrometeoCarController : MonoBehaviour
         AnimateWheelMeshes();
 
         CarVelocityForward = carRigidbody.linearVelocity * Vector3.Dot(carRigidbody.linearVelocity.normalized, transform.forward);
+
+        Debug.Log("Car Velocity X = " + localVelocityX + " / Car is Drifting: " + isDrifting + " / Soap Modifier: " + soapyDriftModifier);
 
 
     }
@@ -569,7 +572,7 @@ public class PrometeoCarController : MonoBehaviour
     {
         //If the forces aplied to the rigidbody in the 'x' asis are greater than
         //3f, it means that the car is losing traction, then the car will start emitting particle systems.
-        if (Mathf.Abs(localVelocityX) > 2.5f)
+        if (Mathf.Abs(localVelocityX) > driftThreshold)
         {
             isDrifting = true;
             DriftCarPS();
@@ -624,7 +627,7 @@ public class PrometeoCarController : MonoBehaviour
     {
         //If the forces aplied to the rigidbody in the 'x' asis are greater than
         //3f, it means that the car is losing traction, then the car will start emitting particle systems.
-        if (Mathf.Abs(localVelocityX) > 2.5f)
+        if (Mathf.Abs(localVelocityX) > driftThreshold)
         {
             isDrifting = true;
             DriftCarPS();
@@ -688,7 +691,7 @@ public class PrometeoCarController : MonoBehaviour
     // usually every 0.1f when the user is not pressing W (throttle), S (reverse) or Space bar (handbrake).
     public void DecelerateCar()
     {
-        if (Mathf.Abs(localVelocityX) > 2.5f)
+        if (Mathf.Abs(localVelocityX) > driftThreshold)
         {
             isDrifting = true;
             DriftCarPS();
@@ -760,7 +763,7 @@ public class PrometeoCarController : MonoBehaviour
         }
         //If the forces aplied to the rigidbody in the 'x' asis are greater than
         //3f, it means that the car lost its traction, then the car will start emitting particle systems.
-        if (Mathf.Abs(localVelocityX) > 2.5f)
+        if (Mathf.Abs(localVelocityX) > driftThreshold)
         {
             isDrifting = true;
         }

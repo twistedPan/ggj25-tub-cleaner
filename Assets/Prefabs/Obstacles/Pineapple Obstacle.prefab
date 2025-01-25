@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6797338136927400022
+--- !u!1 &1884477916001380446
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9063019353941232085}
-  - component: {fileID: 6841469201834762292}
+  - component: {fileID: 4315993266872965752}
+  - component: {fileID: 6380784879052835222}
   m_Layer: 0
-  m_Name: Pineapple Obstacle
+  m_Name: Collider
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9063019353941232085
+--- !u!4 &4315993266872965752
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797338136927400022}
+  m_GameObject: {fileID: 1884477916001380446}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 42.7}
-  m_LocalScale: {x: 16, y: 16, z: 16}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 9111847218235192095}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &6841469201834762292
+  m_Children: []
+  m_Father: {fileID: 9063019353941232085}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!136 &6380784879052835222
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797338136927400022}
+  m_GameObject: {fileID: 1884477916001380446}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -56,6 +55,52 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6797338136927400022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9063019353941232085}
+  - component: {fileID: 910914489239239891}
+  m_Layer: 0
+  m_Name: Pineapple Obstacle
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &9063019353941232085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797338136927400022}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7366934, y: 0, z: 0, w: 0.6762269}
+  m_LocalPosition: {x: 0, y: 2, z: 42.7}
+  m_LocalScale: {x: 32, y: 32, z: 32}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9111847218235192095}
+  - {fileID: 4315993266872965752}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -94.901, y: 0, z: 0}
+--- !u!114 &910914489239239891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797338136927400022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe0cb744b5fcab42862f3e6a73f28f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6409689280684270831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98,31 +143,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 2a82b13cf0e93a049aa0b3516e412e32, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.763
+      value: -0.194
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 2a82b13cf0e93a049aa0b3516e412e32, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.269
+      value: -0.551
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 2a82b13cf0e93a049aa0b3516e412e32, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6762255
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 2a82b13cf0e93a049aa0b3516e412e32, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7366948
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 2a82b13cf0e93a049aa0b3516e412e32, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 2a82b13cf0e93a049aa0b3516e412e32, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 2a82b13cf0e93a049aa0b3516e412e32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -94.901
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: 2a82b13cf0e93a049aa0b3516e412e32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

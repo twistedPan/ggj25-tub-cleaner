@@ -7,6 +7,7 @@ public class Bubble : MonoBehaviour
     public int SoapAmount = 100;
     
     public bool SetSoapAmountBasedOnArea = true;
+    private AudioSource _soapSFX;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +22,8 @@ public class Bubble : MonoBehaviour
 
         // Register this bubble with the GameState
         _gameState.RegisterBubble(this);
+
+        _soapSFX = GameObject.Find("SoapSound").GetComponent<AudioSource>();
     }
 
     public int GetArea() {
@@ -40,6 +43,7 @@ public class Bubble : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         // If the object that collided with this bubble is the player
         if (other.gameObject.tag == "Player") {
+            _soapSFX.Play();
             _gameState.ConsumeBubble(this);
         } 
     }

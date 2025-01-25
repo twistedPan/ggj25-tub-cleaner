@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7615698608254226077
+--- !u!1 &6892903527873280292
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2202744244009735350}
-  - component: {fileID: 5317107926584122430}
+  - component: {fileID: 622032924063860367}
+  - component: {fileID: 2913535362196378967}
   m_Layer: 0
-  m_Name: Patrick Obstacle
+  m_Name: Collider
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2202744244009735350
+--- !u!4 &622032924063860367
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7615698608254226077}
+  m_GameObject: {fileID: 6892903527873280292}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3723562889991278442}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &5317107926584122430
+  m_Children: []
+  m_Father: {fileID: 2202744244009735350}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!136 &2913535362196378967
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7615698608254226077}
+  m_GameObject: {fileID: 6892903527873280292}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -56,6 +55,52 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &7615698608254226077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2202744244009735350}
+  - component: {fileID: 6729663308512000610}
+  m_Layer: 0
+  m_Name: Patrick Obstacle
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &2202744244009735350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615698608254226077}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3723562889991278442}
+  - {fileID: 622032924063860367}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &6729663308512000610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615698608254226077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe0cb744b5fcab42862f3e6a73f28f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1525807731533633690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -138,31 +183,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: cca28a741df0d5849a3cb8ba7972198d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.008
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: cca28a741df0d5849a3cb8ba7972198d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.231
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: cca28a741df0d5849a3cb8ba7972198d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.039
+      value: -0.217
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: cca28a741df0d5849a3cb8ba7972198d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: cca28a741df0d5849a3cb8ba7972198d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: cca28a741df0d5849a3cb8ba7972198d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: cca28a741df0d5849a3cb8ba7972198d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: cca28a741df0d5849a3cb8ba7972198d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

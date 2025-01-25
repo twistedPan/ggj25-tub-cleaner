@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 496489550478602035}
+  - component: {fileID: 142022779698827007}
   m_Layer: 0
   m_Name: Duck Obstacle
   m_TagString: Untagged
@@ -24,14 +25,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9058354650593264504}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12862557, y: 0.6406825, z: -0.11003676, w: 0.7489148}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -109.27, y: 10.29, z: -21.6}
   m_LocalScale: {x: 100, y: 100.000015, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5684327047171897886}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 19.491, y: 81.093, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &142022779698827007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058354650593264504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe0cb744b5fcab42862f3e6a73f28f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5289601081048702453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54,11 +67,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -66,7 +79,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

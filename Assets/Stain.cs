@@ -1,23 +1,43 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
+using Unity.Mathematics;
 
 public class Stain : MonoBehaviour
 {
+    public int MaxDirtStrength = 1;
+    public int DirtStrength = 1;
+
+    public bool SetDirtStrengthBasedOnArea = true;
     // Get global GameState object
-    private GameState gameState;
+    private GameState _gameState;
+
+    private DecalProjector _decalProjector;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {   
-        gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        _gameState = GameObject.Find("GameState").GetComponent<GameState>();
         // Register this stain with the GameState
-        gameState.RegisterStain(this);
-        
+
+        // If the dirt strength should be set based on the area
+        if (SetDirtStrengthBasedOnArea) {
+            // Set the dirt strength based on the area
+            DirtStrength = GetArea();
+            MaxDirtStrength = DirtStrength;
+        }
+
+        _gameState.RegisterStain(this);
+
+        // Get the decal material
+        _decalProjector = GetComponent<DecalProjector>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+     // Update DecalProjector Opacity based on remaining dirt strength
+
+
     }
 
     // Get the area of the stain
@@ -30,10 +50,15 @@ public class Stain : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other) {
+        // If the object that collided with this stain is the player
+        Debug.Log("Collision detected with: " + other.gameObject.tag);
+        if (other.gameObject.tag == "Player") {
 
-        // Remove this stain from the GameState
-        gameState.RemoveStain(this);
-        // Delete this object
-        Destroy(gameObject);
+            // Remove this stain from the GameState
+            _gameState.RemoveStain(this);
+        } 
+
+        Debug.Log("Remaing dirt of max dirt: " + DirtStrength + " " + MaxDirtStrength +" Name: " + gameObject.name);
+        _decalProjector.fadeFactor = math.max((float)DirtStrength / MaxDirtStrength, 0.3f);
     }
 }

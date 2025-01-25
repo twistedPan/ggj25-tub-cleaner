@@ -42,11 +42,11 @@ public class Stain : MonoBehaviour
 
     // Get the area of the stain
     public int GetArea() {
-        // X and Z are the dimensions of the stain
+        // X and Y are the dimensions of the stain
         float x = transform.localScale.x;
-        float z = transform.localScale.z;
+        float y = transform.localScale.y;
         // Return the area
-        return (int)(x * z);
+        return (int)(x * y);
     }
 
     void OnTriggerEnter(Collider other) {

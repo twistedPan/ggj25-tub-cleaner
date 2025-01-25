@@ -45,9 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelTime: 60
-  SoapAmount: 100
+  SoapAmount: 73
+  _availableSoapAmount: 0
   _timeLeft: 0
   Stains: []
+  Bubbles: []
   _stainSquare: 0
   StainCountText: {fileID: 0}
   AreaText: {fileID: 0}

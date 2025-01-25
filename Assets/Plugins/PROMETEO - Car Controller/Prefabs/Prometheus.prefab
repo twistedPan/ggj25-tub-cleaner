@@ -71,6 +71,7 @@ Transform:
   - {fileID: 901333272}
   - {fileID: 5758755294760203549}
   - {fileID: 8351242827454257578}
+  - {fileID: 3842953780875251463}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &5135156708204615449
@@ -149,6 +150,9 @@ MonoBehaviour:
   isDrifting: 0
   isTractionLocked: 0
   CarVelocityForward: {x: 0, y: 0, z: 0}
+  GroundCheck: {fileID: 0}
+  IsGrounded: 0
+  groundraycastLength: 0.5
 --- !u!1 &934883528070179459
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +855,37 @@ Transform:
   - {fileID: 2350058031404111781}
   - {fileID: 5534550323598598708}
   m_Father: {fileID: 6399581921715410368}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5718450824196570015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3842953780875251463}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3842953780875251463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5718450824196570015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 261786959625234688}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6204759407096980703
 GameObject:

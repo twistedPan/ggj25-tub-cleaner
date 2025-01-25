@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using Unity.Mathematics;
+using UnityEngine.SceneManagement;
 
 public class GameState : MonoBehaviour
 {   
@@ -29,6 +30,10 @@ public class GameState : MonoBehaviour
     public Text TotalDirtStrengthText;
     public Text LevelTimerText;
     public Text SoapAmountText;
+    public MultiText GameOverText;
+    public MultiText LevelCompleteText;
+
+    DeathDetector deathDetector;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +41,37 @@ public class GameState : MonoBehaviour
         _timeLeft = LevelTime;
         LevelTimerText.text = _timeLeft.ToString();
         SoapAmountText.text = SoapAmount.ToString();
+
+        // Find 
+        deathDetector = FindFirstObjectByType<DeathDetector>();
+        Debug.Log("Death Detector: " + deathDetector);
+        Debug.Log("Death OnPlayerDied: " + deathDetector.OnPlayerDied);
+        deathDetector.OnPlayerDied += OnGameOver;
+    }
+
+    void OnGameOver() {
+        Debug.Log("Game Over");
+
+        GameOverText.SetRandomText();
+        
+        GameOverText.Show(2);
+
+        // wait
+        Invoke("RestartGame", 4);
+    }
+
+    void OnLevelComplete() {
+        Debug.Log("Level Complete");
+        
+        LevelCompleteText.SetRandomText();
+        LevelCompleteText.Show(2);
+
+        // wait
+        Invoke("RestartGame", 4);
+    }
+
+    void RestartGame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void RegisterStain(Stain stain) {
@@ -78,6 +114,10 @@ public class GameState : MonoBehaviour
             StainCountText.text = Stains.Count.ToString();
             TotalDirtStrengthText.text = _totalDirtStrength.ToString();
             SoapAmountText.text = SoapAmount.ToString();
+
+            if (Stains.Count == 0) {
+                OnLevelComplete();
+            }
         } 
 
     }

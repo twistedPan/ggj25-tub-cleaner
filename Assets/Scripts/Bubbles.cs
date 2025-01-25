@@ -8,6 +8,7 @@ public class Bubble : MonoBehaviour
     
     public bool SetSoapAmountBasedOnArea = true;
     private AudioSource _soapSFX;
+    private int _startingSoapAmount;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +20,8 @@ public class Bubble : MonoBehaviour
             // Set the soap amount based on the area
             SoapAmount = GetArea();
         }
+
+        _startingSoapAmount = SoapAmount;
 
         // Register this bubble with the GameState
         _gameState.RegisterBubble(this);
@@ -46,5 +49,23 @@ public class Bubble : MonoBehaviour
             _soapSFX.Play();
             _gameState.ConsumeBubble(this);
         } 
+    }
+
+    public void Consume(int amount) {
+        SoapAmount -= amount;
+        
+        // Resize the bubble based on the remaining soap amount
+        float scale = (float)SoapAmount / _startingSoapAmount;
+        Debug.Log("Scale: " + scale);
+        Debug.Log("Old Scale: " + transform.localScale);
+        float oldArea = GetArea();
+        float newArea = oldArea * scale;
+
+        // Workaround because I can't think of a better way right now
+        float newEdge = Mathf.Sqrt(newArea);
+        transform.localScale = new Vector3(newEdge, newEdge, transform.localScale.z);
+
+        Debug.Log("New Scale: " + transform.localScale);
+
     }
 }

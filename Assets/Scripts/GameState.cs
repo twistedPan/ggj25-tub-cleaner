@@ -9,6 +9,8 @@ public class GameState : MonoBehaviour
     public int LevelTime = 60;
     public int SoapAmount = 100;
 
+    public int SoapCapacity = 100;
+
     [SerializeField]
     private int _availableSoapAmount = 0;
 
@@ -124,10 +126,22 @@ public class GameState : MonoBehaviour
     }
 
     public void ConsumeBubble(Bubble bubble) {
-        Bubbles.Remove(bubble);
-        _availableSoapAmount -= bubble.SoapAmount;
-        AddSoap(bubble.SoapAmount);
-        bubble.gameObject.SetActive(false);
+        //_availableSoapAmount -= bubble.SoapAmount;
+        int consumedSoapAmount = math.max(math.min(bubble.SoapAmount, SoapCapacity - SoapAmount), 0);
+        
+        _availableSoapAmount -= consumedSoapAmount;
+
+        AddSoap(consumedSoapAmount);
+
+        if (consumedSoapAmount > 0) {
+            bubble.Consume(consumedSoapAmount);
+        }
+
+        if (bubble.SoapAmount == 0) {
+            Bubbles.Remove(bubble);
+            bubble.gameObject.SetActive(false);
+        }
+        
     }
 
     public void AddSoap(int amount) {

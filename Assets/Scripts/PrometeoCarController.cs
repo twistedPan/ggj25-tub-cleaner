@@ -96,14 +96,6 @@ public class PrometeoCarController : MonoBehaviour
     public bool useUI = false;
     public Text carSpeedText; // Used to store the UI object that is going to show the speed of the car.
 
-    //SOUNDS
-
-    [Space(20)]
-    //[Header("Sounds")]
-    [Space(10)]
-    //The following variable lets you to set up sounds for your car such as the car engine or tire screech sounds.
-    public bool useSounds = false;
-
     //CONTROLS
 
     [Space(20)]
@@ -228,11 +220,6 @@ public class PrometeoCarController : MonoBehaviour
             {
                 carSpeedText.text = "0";
             }
-        }
-
-        if (useSounds)
-        {
-            InvokeRepeating("CarSounds", 0f, 0.1f);
         }
 
         if (!useEffects)
@@ -425,13 +412,6 @@ public class PrometeoCarController : MonoBehaviour
 
         CarVelocityForward = carRigidbody.linearVelocity * Vector3.Dot(carRigidbody.linearVelocity.normalized, transform.forward);
 
-<<<<<<< HEAD
-        Debug.Log("Car Velocity X = " + localVelocityX + " / Car is Drifting: " + isDrifting + " / Soap Modifier: " + soapyDriftModifier);
-=======
-        // Debug.Log("Car Velocity X = " + localVelocityX + " / Car is Drifting: " + isDrifting + " / Soap Modifier: " + soapyDriftModifier);
->>>>>>> 2659474 (Further improved drift modifier)
-
-
     }
 
     // This method converts the car speed data from float to string, and then set the text of the UI carSpeedText with this value.
@@ -444,34 +424,6 @@ public class PrometeoCarController : MonoBehaviour
             {
                 float absoluteCarSpeed = Mathf.Abs(carSpeed);
                 carSpeedText.text = Mathf.RoundToInt(absoluteCarSpeed).ToString();
-            }
-            catch (Exception ex)
-            {
-                Debug.LogWarning(ex);
-            }
-        }
-
-    }
-
-    // This method controls the car sounds. For example, the car engine will sound slow when the car speed is low because the
-    // pitch of the sound will be at its lowest point. On the other hand, it will sound fast when the car speed is high because
-    // the pitch of the sound will be the sum of the initial pitch + the car speed divided by 100f.
-    // Apart from that, the tireScreechSound will play whenever the car starts drifting or losing traction.
-    public void CarSounds()
-    {
-
-        if (useSounds)
-        {
-            try
-            {
-                if ((isDrifting) || (isTractionLocked && Mathf.Abs(carSpeed) > 12f) && IsGrounded)
-                {
-                    OnDrifting!.Invoke();
-                }
-                else if ((!isDrifting) && (!isTractionLocked || Mathf.Abs(carSpeed) < 12f))
-                {
-                    //OnDriftEnd!.Invoke();
-                }
             }
             catch (Exception ex)
             {

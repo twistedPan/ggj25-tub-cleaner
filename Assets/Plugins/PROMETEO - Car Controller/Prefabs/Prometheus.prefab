@@ -150,9 +150,9 @@ MonoBehaviour:
   isDrifting: 0
   isTractionLocked: 0
   CarVelocityForward: {x: 0, y: 0, z: 0}
-  GroundCheck: {fileID: 0}
+  GroundCheck: {fileID: 3842953780875251463}
   IsGrounded: 0
-  groundraycastLength: 0.5
+  groundraycastLength: 0.6
 --- !u!1 &934883528070179459
 GameObject:
   m_ObjectHideFlags: 0

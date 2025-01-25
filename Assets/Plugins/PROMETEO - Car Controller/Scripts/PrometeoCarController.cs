@@ -160,6 +160,11 @@ public class PrometeoCarController : MonoBehaviour
     WheelFrictionCurve RRwheelFriction;
     float RRWextremumSlip;
 
+    [Header("Collision Check")]
+    public Transform GroundCheck;
+    public bool IsGrounded;
+    public float groundraycastLength = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -287,6 +292,9 @@ public class PrometeoCarController : MonoBehaviour
     void Update()
     {
 
+        IsGrounded = Physics.Raycast(GroundCheck.position, -GroundCheck.up, groundraycastLength);
+        Color rayColor = IsGrounded ? Color.green : Color.red;
+        Debug.DrawRay(GroundCheck.position, -GroundCheck.up * groundraycastLength, rayColor);
         //CAR DATA
 
         // We determine the speed of the car.
@@ -412,7 +420,8 @@ public class PrometeoCarController : MonoBehaviour
         AnimateWheelMeshes();
 
         CarVelocityForward = carRigidbody.linearVelocity * Vector3.Dot(carRigidbody.linearVelocity.normalized, transform.forward);
-        Debug.DrawRay(transform.position, CarVelocityForward * 10, Color.green);
+
+
     }
 
     // This method converts the car speed data from float to string, and then set the text of the UI carSpeedText with this value.
@@ -809,12 +818,12 @@ public class PrometeoCarController : MonoBehaviour
         {
             try
             {
-                if (isDrifting)
+                if (isDrifting && IsGrounded)
                 {
                     RLWParticleSystem.Play();
                     RRWParticleSystem.Play();
                 }
-                else if (!isDrifting)
+                else
                 {
                     RLWParticleSystem.Stop();
                     RRWParticleSystem.Stop();
@@ -827,7 +836,7 @@ public class PrometeoCarController : MonoBehaviour
 
             try
             {
-                if ((isTractionLocked || Mathf.Abs(localVelocityX) > 5f) && Mathf.Abs(carSpeed) > 12f)
+                if ((isTractionLocked || Mathf.Abs(localVelocityX) > 5f) && Mathf.Abs(carSpeed) > 12f && IsGrounded)
                 {
                     RLWTireSkid.emitting = true;
                     RRWTireSkid.emitting = true;

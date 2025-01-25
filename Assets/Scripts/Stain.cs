@@ -13,6 +13,8 @@ public class Stain : MonoBehaviour
 
     private DecalProjector _decalProjector;
 
+    private DriftRubSFX _driftRubSFX;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {   
@@ -30,6 +32,8 @@ public class Stain : MonoBehaviour
 
         // Get the decal material
         _decalProjector = GetComponent<DecalProjector>();
+
+        _driftRubSFX = FindFirstObjectByType<DriftRubSFX>();
     }
 
     // Update is called once per frame
@@ -53,6 +57,8 @@ public class Stain : MonoBehaviour
         // If the object that collided with this stain is the player
         Debug.Log("Collision detected with: " + other.gameObject.tag);
         if (other.gameObject.tag == "Player") {
+
+            _driftRubSFX.PlayRandomSqueeekSFX();
 
             // Remove this stain from the GameState
             _gameState.RemoveStain(this);

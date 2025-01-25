@@ -285,6 +285,7 @@ MonoBehaviour:
   RRWParticleSystem: {fileID: 4402756320999286479}
   RLWTireSkid: {fileID: 7045468751846977024}
   RRWTireSkid: {fileID: 7045468751210077382}
+  MidStream: {fileID: 110557099479726783}
   useUI: 1
   carSpeedText: {fileID: 0}
   useSounds: 1
@@ -2001,6 +2002,11 @@ PrefabInstance:
 --- !u!4 &110557099479726782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4222883965140413210, guid: 1fcfe9d539bde44f5879b9b22bf30091, type: 3}
+  m_PrefabInstance: {fileID: 4256593855060758948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!96 &110557099479726783 stripped
+TrailRenderer:
+  m_CorrespondingSourceObject: {fileID: 4222883965140413211, guid: 1fcfe9d539bde44f5879b9b22bf30091, type: 3}
   m_PrefabInstance: {fileID: 4256593855060758948}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7717169548777707488

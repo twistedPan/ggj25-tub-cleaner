@@ -83,6 +83,7 @@ public class PrometeoCarController : MonoBehaviour
     // The following trail renderers are used as tire skids when the car loses traction.
     public TrailRenderer RLWTireSkid;
     public TrailRenderer RRWTireSkid;
+    public TrailRenderer MidStream;
 
     //SPEED TEXT (UI)
 
@@ -244,6 +245,10 @@ public class PrometeoCarController : MonoBehaviour
             {
                 RRWTireSkid.emitting = false;
             }
+            if (MidStream != null)
+            {
+                MidStream.emitting = true;
+            }
         }
 
         if (useTouchControls)
@@ -398,6 +403,14 @@ public class PrometeoCarController : MonoBehaviour
 
         }
 
+        if(!IsGrounded)
+        {
+            MidStream.emitting = false;
+        }
+        else
+        {
+            MidStream.emitting = true;
+        }
 
         // We call the method AnimateWheelMeshes() in order to match the wheel collider movements with the 3D meshes of the wheels.
         AnimateWheelMeshes();

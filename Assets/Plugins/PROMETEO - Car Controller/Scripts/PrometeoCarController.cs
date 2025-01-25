@@ -100,9 +100,6 @@ public class PrometeoCarController : MonoBehaviour
     [Space(10)]
     //The following variable lets you to set up sounds for your car such as the car engine or tire screech sounds.
     public bool useSounds = false;
-    public AudioSource carEngineSound; // This variable stores the sound of the car engine.
-    public AudioSource tireScreechSound; // This variable stores the sound of the tire screech (when the car is drifting).
-    float initialCarEngineSoundPitch; // Used to store the initial pitch of the car engine sound.
 
     //CONTROLS
 
@@ -165,6 +162,9 @@ public class PrometeoCarController : MonoBehaviour
     public bool IsGrounded;
     public float groundraycastLength = 1f;
 
+    public Action OnDrifting;
+    public Action OnDriftEnd;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -206,12 +206,6 @@ public class PrometeoCarController : MonoBehaviour
         RRwheelFriction.asymptoteValue = rearRightCollider.sidewaysFriction.asymptoteValue;
         RRwheelFriction.stiffness = rearRightCollider.sidewaysFriction.stiffness;
 
-        // We save the initial pitch of the car engine sound.
-        if (carEngineSound != null)
-        {
-            initialCarEngineSoundPitch = carEngineSound.pitch;
-        }
-
         // We invoke 2 methods inside this script. CarSpeedUI() changes the text of the UI object that stores
         // the speed of the car and CarSounds() controls the engine and drifting sounds. Both methods are invoked
         // in 0 seconds, and repeatedly called every 0.1 seconds.
@@ -230,17 +224,6 @@ public class PrometeoCarController : MonoBehaviour
         if (useSounds)
         {
             InvokeRepeating("CarSounds", 0f, 0.1f);
-        }
-        else if (!useSounds)
-        {
-            if (carEngineSound != null)
-            {
-                carEngineSound.Stop();
-            }
-            if (tireScreechSound != null)
-            {
-                tireScreechSound.Stop();
-            }
         }
 
         if (!useEffects)
@@ -454,37 +437,18 @@ public class PrometeoCarController : MonoBehaviour
         {
             try
             {
-                if (carEngineSound != null)
+                if ((isDrifting) || (isTractionLocked && Mathf.Abs(carSpeed) > 12f) && IsGrounded)
                 {
-                    float engineSoundPitch = initialCarEngineSoundPitch + (Mathf.Abs(carRigidbody.linearVelocity.magnitude) / 25f);
-                    carEngineSound.pitch = engineSoundPitch;
-                }
-                if ((isDrifting) || (isTractionLocked && Mathf.Abs(carSpeed) > 12f))
-                {
-                    if (!tireScreechSound.isPlaying)
-                    {
-                        tireScreechSound.Play();
-                    }
+                    OnDrifting!.Invoke();
                 }
                 else if ((!isDrifting) && (!isTractionLocked || Mathf.Abs(carSpeed) < 12f))
                 {
-                    tireScreechSound.Stop();
+                    //OnDriftEnd!.Invoke();
                 }
             }
             catch (Exception ex)
             {
                 Debug.LogWarning(ex);
-            }
-        }
-        else if (!useSounds)
-        {
-            if (carEngineSound != null && carEngineSound.isPlaying)
-            {
-                carEngineSound.Stop();
-            }
-            if (tireScreechSound != null && tireScreechSound.isPlaying)
-            {
-                tireScreechSound.Stop();
             }
         }
 
@@ -606,7 +570,7 @@ public class PrometeoCarController : MonoBehaviour
         //is safe to apply positive torque to go forward.
         if (localVelocityZ < -1f)
         {
-            //Brakes();
+            Brakes();
         }
         else
         {
@@ -921,5 +885,4 @@ public class PrometeoCarController : MonoBehaviour
             driftingAxis = 0f;
         }
     }
-
 }

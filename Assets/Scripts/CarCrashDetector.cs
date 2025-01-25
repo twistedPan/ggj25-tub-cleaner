@@ -8,6 +8,13 @@ public class CarCrashDetector : MonoBehaviour
     public float crashProtectionTime = 2f;
     private float lastCrashTime;
 
+    private AudioSource collisionSound;
+
+    private void Start()
+    {
+        collisionSound = GameObject.Find("CollisionSound").GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (hasCrashed is false) return;
@@ -26,6 +33,7 @@ public class CarCrashDetector : MonoBehaviour
             OnCarCrash?.Invoke();
             hasCrashed = true;
             lastCrashTime = Time.time;
+            collisionSound.Play();
         }
     }
 }

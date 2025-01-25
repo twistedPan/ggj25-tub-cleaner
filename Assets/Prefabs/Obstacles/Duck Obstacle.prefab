@@ -1,28 +1,48 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2837154827991522925
+--- !u!1 &9058354650593264504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496489550478602035}
+  m_Layer: 0
+  m_Name: Duck Obstacle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496489550478602035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058354650593264504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.12862557, y: 0.6406825, z: -0.11003676, w: 0.7489148}
+  m_LocalPosition: {x: -109.27, y: 10.29, z: -21.6}
+  m_LocalScale: {x: 100, y: 100.000015, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5684327047171897886}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 19.491, y: 81.093, z: 0}
+--- !u!1001 &5289601081048702453
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 496489550478602035}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.9
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -42,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -66,15 +86,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c60b41e2fb4d25c4e9229134a69b72aa, type: 2}
     - target: {fileID: 919132149155446097, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_Name
-      value: Rubber Duck
+      value: rubber_duck
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       propertyPath: m_TagString
       value: Obstacle
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82,20 +98,20 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5960101670115237253}
+      addedObject: {fileID: 2250754704019153242}
   m_SourcePrefab: {fileID: 100100000, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
---- !u!1 &3143214131402056508 stripped
+--- !u!1 &5019571820062515364 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
-  m_PrefabInstance: {fileID: 2837154827991522925}
+  m_PrefabInstance: {fileID: 5289601081048702453}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &5960101670115237253
+--- !u!64 &2250754704019153242
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3143214131402056508}
+  m_GameObject: {fileID: 5019571820062515364}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -111,3 +127,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3694527219041795600, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
+--- !u!4 &5684327047171897886 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cb981b1f2cd71a489d9d37e9afb514e, type: 3}
+  m_PrefabInstance: {fileID: 5289601081048702453}
+  m_PrefabAsset: {fileID: 0}

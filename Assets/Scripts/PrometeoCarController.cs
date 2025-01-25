@@ -40,6 +40,8 @@ public class PrometeoCarController : MonoBehaviour
     public int decelerationMultiplier = 2; // How fast the car decelerates when the user is not using the throttle.
     [Range(1, 20)]
     public int handbrakeDriftMultiplier = 5; // How much grip the car loses when the user hit the handbrake.
+    [Range(0.0f, 1.0f)]
+    public float soapyDriftModifier = 0.0f; // Adds soapyness to drifts
     [Space(10)]
     public Vector3 bodyMassCenter; // This is a vector that contains the center of mass of the car. I recommend to set this value
                                    // in the points x = 0 and z = 0 of your car. You can select the value that you want in the y axis,
@@ -165,10 +167,15 @@ public class PrometeoCarController : MonoBehaviour
 
     public Action OnDrifting;
     public Action OnDriftEnd;
+    private GameState _gameState;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        _gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        soapyDriftModifier = _gameState.SoapAmount / _gameState.SoapCapacity;
+
         //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
         //gameObject. Also, we define the center of mass of the car with the Vector3 given
         //in the inspector.
@@ -288,7 +295,7 @@ public class PrometeoCarController : MonoBehaviour
         // We determine the speed of the car.
         carSpeed = (2 * Mathf.PI * frontLeftCollider.radius * frontLeftCollider.rpm * 60) / 1000;
         // Save the local velocity of the car in the x axis. Used to know if the car is drifting.
-        localVelocityX = transform.InverseTransformDirection(carRigidbody.linearVelocity).x;
+        localVelocityX = transform.InverseTransformDirection(carRigidbody.linearVelocity).x + soapyDriftModifier;
         // Save the local velocity of the car in the z axis. Used to know if the car is going forward or backwards.
         localVelocityZ = transform.InverseTransformDirection(carRigidbody.linearVelocity).z;
 

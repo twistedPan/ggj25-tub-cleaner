@@ -167,10 +167,15 @@ public class PrometeoCarController : MonoBehaviour
 
     public Action OnDrifting;
     public Action OnDriftEnd;
+    private GameState _gameState;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        _gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        soapyDriftModifier = _gameState.SoapAmount / _gameState.SoapCapacity;
+
         //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
         //gameObject. Also, we define the center of mass of the car with the Vector3 given
         //in the inspector.

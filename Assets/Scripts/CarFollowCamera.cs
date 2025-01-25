@@ -1,4 +1,3 @@
-using Unity.Cinemachine;
 using UnityEngine;
 
 public class CarFollowCamera : MonoBehaviour
@@ -7,21 +6,20 @@ public class CarFollowCamera : MonoBehaviour
     public Transform carCamTransform;
     public Transform CameraTarget;
     public Vector3 CameraTargetOrigin;
-    public float OffsetDamping = 1f;
-    public float OffsetFactor = 1f;
+    public float OffsetDamping = 2f;
+    public float OffsetFactor = 3f;
+    public bool applyOffset = true;
+
     [Header("Debug Values")]
     [SerializeField] private Vector3 carForwartVec;
     [SerializeField] private Vector3 cross;
     [SerializeField] private float targetOffset;
-
-    private CinemachineCamera carCam;
-    public bool applyOffset = true;
+    private float currentOffset;
 
     void Start()
     {
         carController = FindFirstObjectByType<PrometeoCarController>();
         carCamTransform = transform;
-        carCam = GetComponent<CinemachineCamera>();
         CameraTargetOrigin = CameraTarget.localPosition;
     }
 
@@ -33,7 +31,7 @@ public class CarFollowCamera : MonoBehaviour
 
         if (applyOffset is false) return;
 
-        CameraTarget.localPosition = new Vector3(targetOffset, CameraTargetOrigin.y, CameraTargetOrigin.z);
-        //camHardLookAt.LookAtOffset.x = Mathf.Lerp(camHardLookAt.LookAtOffset.x, targetOffset, Time.deltaTime * OffsetDamping);
+        currentOffset = Mathf.Lerp(currentOffset, targetOffset, Time.deltaTime * OffsetDamping);
+        CameraTarget.localPosition = new Vector3(currentOffset, CameraTargetOrigin.y, CameraTargetOrigin.z);
     }
 }

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sponge
+* source:	https://sketchfab.com/3d-models/sponge-97aee64edf0c4521b82416f3b30c61ce
+* author:	Aullwen (https://sketchfab.com/Aullwen)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sponge" (https://sketchfab.com/3d-models/sponge-97aee64edf0c4521b82416f3b30c61ce) by Aullwen (https://sketchfab.com/Aullwen) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

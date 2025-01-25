@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3602413235724400506}
   - component: {fileID: 2363998064264517423}
   - component: {fileID: 3822980428230592016}
+  - component: {fileID: 8327137476626531044}
+  - component: {fileID: 5366979844763408364}
   m_Layer: 0
   m_Name: DirtDecalCube
   m_TagString: Untagged
@@ -26,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7896380076431745714}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7122666, y: -0, z: -0, w: 0.701909}
+  m_LocalRotation: {x: -0.7122649, y: 0, z: 0, w: 0.70191073}
   m_LocalPosition: {x: 0, y: -0.49, z: 0}
-  m_LocalScale: {x: 4.74, y: 4.74, z: 4.74}
+  m_LocalScale: {x: 11.704649, y: 20, z: 8.641749}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,3 +67,39 @@ MonoBehaviour:
   m_Offset: {x: 0, y: 0, z: 0.375}
   m_Size: {x: 1, y: 1, z: 0.75}
   m_FadeFactor: 1
+--- !u!114 &8327137476626531044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896380076431745714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19f57b32df6447269faa969e65e1bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDirtStrength: 1
+  DirtStrength: 1
+  SetDirtStrengthBasedOnArea: 1
+--- !u!65 &5366979844763408364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896380076431745714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

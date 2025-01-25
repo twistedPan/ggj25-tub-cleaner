@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class Bubble : MonoBehaviour
 {
     private GameState _gameState;
@@ -56,16 +56,32 @@ public class Bubble : MonoBehaviour
         
         // Resize the bubble based on the remaining soap amount
         float scale = (float)SoapAmount / _startingSoapAmount;
-        Debug.Log("Scale: " + scale);
-        Debug.Log("Old Scale: " + transform.localScale);
+
         float oldArea = GetArea();
         float newArea = oldArea * scale;
 
         // Workaround because I can't think of a better way right now
         float newEdge = Mathf.Sqrt(newArea);
-        transform.localScale = new Vector3(newEdge, newEdge, transform.localScale.z);
+        //transform.localScale = new Vector3(newEdge, newEdge, transform.localScale.z);
+        Vector3 destinationScale = new Vector3(newEdge, newEdge, transform.localScale.z);
+        StartCoroutine(ScaleOverTime(1, destinationScale));
 
-        Debug.Log("New Scale: " + transform.localScale);
+    }
 
+    private IEnumerator ScaleOverTime(float time, Vector3 scale)
+    {
+        Vector3 originalScale = transform.localScale;
+        Vector3 destinationScale = scale;
+
+        float currentTime = 0.0f;
+
+        do
+        {
+            transform.localScale = Vector3.Lerp(originalScale, destinationScale, currentTime / time);
+            currentTime += Time.deltaTime;
+            yield return null;
+        } while (currentTime <= time);
+
+        transform.localScale = destinationScale;
     }
 }

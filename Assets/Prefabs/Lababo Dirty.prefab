@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4871827727280572738
 Transform:
@@ -62,6 +62,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8543178883552081816, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -6689036041284674117, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
       propertyPath: m_Name
       value: Lababo Dirty
@@ -69,6 +73,26 @@ PrefabInstance:
     - target: {fileID: -6689036041284674117, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6689036041284674117, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2983180177906858018, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -1448451634688880294, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 382217599578567059, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 775198891212102723, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2774220344278030320, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
       propertyPath: m_LocalScale.x
@@ -121,6 +145,18 @@ PrefabInstance:
     - target: {fileID: 2774220344278030320, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441812787796767262, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944035343926844487, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733665273988333668, guid: e7d5249ac205b8d428e80872451d70f8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

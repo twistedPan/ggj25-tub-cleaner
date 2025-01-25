@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &161008899474708677
 Transform:
@@ -62,6 +62,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7225414446036993070, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -6689036041284674117, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
       propertyPath: m_Name
       value: Lavabo Edel
@@ -70,10 +74,54 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6689036041284674117, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -6269696494536887690, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6269696494536887690, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -6035599167157728359, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5584519208020214935, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5584519208020214935, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5a70e09b6ffa74441b49b9c751da760b, type: 2}
+    - target: {fileID: -4849752860556711286, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425401332224313209, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819570792113458752, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903486728043639652, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147142732866576724, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2394534584570093564, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50f4e6866db45d441a51665b8be9dc87, type: 2}
     - target: {fileID: 2774220344278030320, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -146,6 +194,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.41
       objectReference: {fileID: 0}
+    - target: {fileID: 7407692715353912884, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489609133843037884, guid: c47cd5c045da54a41a685e2a8b2d8ebb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50f4e6866db45d441a51665b8be9dc87, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

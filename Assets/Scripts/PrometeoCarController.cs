@@ -425,7 +425,11 @@ public class PrometeoCarController : MonoBehaviour
 
         CarVelocityForward = carRigidbody.linearVelocity * Vector3.Dot(carRigidbody.linearVelocity.normalized, transform.forward);
 
+<<<<<<< HEAD
         Debug.Log("Car Velocity X = " + localVelocityX + " / Car is Drifting: " + isDrifting + " / Soap Modifier: " + soapyDriftModifier);
+=======
+        // Debug.Log("Car Velocity X = " + localVelocityX + " / Car is Drifting: " + isDrifting + " / Soap Modifier: " + soapyDriftModifier);
+>>>>>>> 2659474 (Further improved drift modifier)
 
 
     }

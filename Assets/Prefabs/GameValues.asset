@@ -23,6 +23,6 @@ MonoBehaviour:
   OffsetFactor: 3
   MaxSoapCapacity: 100
   SoapReplenishmentCapacity: 100
-  DirtCleaningCost: 10
+  DirtCleaningCost: 7
   TimeLimitInSeconds: 60
   EndlessMode: 1

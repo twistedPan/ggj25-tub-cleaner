@@ -41,7 +41,7 @@ public class PrometeoCarController : MonoBehaviour
     [Range(1, 20)]
     public int handbrakeDriftMultiplier = 5; // How much grip the car loses when the user hit the handbrake.
     [Range(0.0f, 1.0f)]
-    public float soapyDriftModifier = 0.0f; // Adds soapyness to drifts
+    public float soapinessDriftModifier = 0.0f; // Adds soapyness to drifts
     [Space(10)]
     public Vector3 bodyMassCenter; // This is a vector that contains the center of mass of the car. I recommend to set this value
                                    // in the points x = 0 and z = 0 of your car. You can select the value that you want in the y axis,
@@ -136,7 +136,7 @@ public class PrometeoCarController : MonoBehaviour
     float driftingAxis;
     float localVelocityZ;
     float localVelocityX;
-    float driftThreshold = 15f;
+    float driftThreshold = 3.5f;
     bool deceleratingCar;
     bool touchControlsSetup = false;
     /*
@@ -166,8 +166,7 @@ public class PrometeoCarController : MonoBehaviour
     void Start()
     {
 
-        _gameState = GameObject.Find("GameState").GetComponent<GameState>();
-        soapyDriftModifier = _gameState.CurrentSoapAmount / 100;
+
 
         //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
         //gameObject. Also, we define the center of mass of the car with the Vector3 given
@@ -206,6 +205,18 @@ public class PrometeoCarController : MonoBehaviour
         RRwheelFriction.asymptoteSlip = rearRightCollider.sidewaysFriction.asymptoteSlip;
         RRwheelFriction.asymptoteValue = rearRightCollider.sidewaysFriction.asymptoteValue;
         RRwheelFriction.stiffness = rearRightCollider.sidewaysFriction.stiffness;
+
+        _gameState = GameObject.Find("GameState").GetComponent<GameState>();
+        soapinessDriftModifier = _gameState.CurrentSoapAmount / 100;
+
+        FLwheelFriction.stiffness = frontLeftCollider.sidewaysFriction.stiffness + soapinessDriftModifier;
+        FRwheelFriction.stiffness = frontRightCollider.sidewaysFriction.stiffness + soapinessDriftModifier;
+        RLwheelFriction.stiffness = rearLeftCollider.sidewaysFriction.stiffness + soapinessDriftModifier;
+        RRwheelFriction.stiffness = rearRightCollider.sidewaysFriction.stiffness + soapinessDriftModifier;
+        FLwheelFriction.stiffness = frontLeftCollider.forwardFriction.stiffness + soapinessDriftModifier;
+        FRwheelFriction.stiffness = frontRightCollider.forwardFriction.stiffness + soapinessDriftModifier;
+        RLwheelFriction.stiffness = rearLeftCollider.forwardFriction.stiffness + soapinessDriftModifier;
+        RRwheelFriction.stiffness = rearRightCollider.forwardFriction.stiffness + soapinessDriftModifier;
 
         // We invoke 2 methods inside this script. CarSpeedUI() changes the text of the UI object that stores
         // the speed of the car and CarSounds() controls the engine and drifting sounds. Both methods are invoked
@@ -280,10 +291,20 @@ public class PrometeoCarController : MonoBehaviour
         Debug.DrawRay(GroundCheck.position, -GroundCheck.up * groundraycastLength, rayColor);
         //CAR DATA
 
+        soapinessDriftModifier = _gameState.CurrentSoapAmount / 100;
+        FLwheelFriction.stiffness = frontLeftCollider.sidewaysFriction.stiffness + soapinessDriftModifier;
+        FRwheelFriction.stiffness = frontRightCollider.sidewaysFriction.stiffness + soapinessDriftModifier;
+        RLwheelFriction.stiffness = rearLeftCollider.sidewaysFriction.stiffness + soapinessDriftModifier;
+        RRwheelFriction.stiffness = rearRightCollider.sidewaysFriction.stiffness + soapinessDriftModifier;
+        FLwheelFriction.stiffness = frontLeftCollider.forwardFriction.stiffness + soapinessDriftModifier;
+        FRwheelFriction.stiffness = frontRightCollider.forwardFriction.stiffness + soapinessDriftModifier;
+        RLwheelFriction.stiffness = rearLeftCollider.forwardFriction.stiffness + soapinessDriftModifier;
+        RRwheelFriction.stiffness = rearRightCollider.forwardFriction.stiffness + soapinessDriftModifier;
+
         // We determine the speed of the car.
         carSpeed = (2 * Mathf.PI * frontLeftCollider.radius * frontLeftCollider.rpm * 60) / 1000;
         // Save the local velocity of the car in the x axis. Used to know if the car is drifting.
-        localVelocityX = transform.InverseTransformDirection(carRigidbody.linearVelocity).x * (1+soapyDriftModifier);
+        localVelocityX = transform.InverseTransformDirection(carRigidbody.linearVelocity).x;
         // Save the local velocity of the car in the z axis. Used to know if the car is going forward or backwards.
         localVelocityZ = transform.InverseTransformDirection(carRigidbody.linearVelocity).z;
 

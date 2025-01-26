@@ -6,6 +6,7 @@ public class Bubble : MonoBehaviour
     private GameState _gameState;
 
     public int SoapAmount = 100;
+    public float FadeOutTime = 0.5f;
     
     public bool SetSoapAmountBasedOnArea = true;
     private AudioSource _soapSFX;
@@ -69,11 +70,14 @@ public class Bubble : MonoBehaviour
         float newEdge = Mathf.Sqrt(newArea);
         //transform.localScale = new Vector3(newEdge, newEdge, transform.localScale.z);
         Vector3 destinationScale = new Vector3(newEdge, newEdge, transform.localScale.z);
-        StartCoroutine(ScaleOverTime(1, destinationScale));
+
+        bool destroyOnFinish = SoapAmount <= 0;
+
+        StartCoroutine(ScaleOverTime(FadeOutTime, destinationScale, destroyOnFinish));
 
     }
 
-    private IEnumerator ScaleOverTime(float time, Vector3 scale)
+    private IEnumerator ScaleOverTime(float time, Vector3 scale, bool destroyOnFinish)
     {
         Vector3 originalScale = transform.localScale;
         Vector3 destinationScale = scale;
@@ -88,5 +92,11 @@ public class Bubble : MonoBehaviour
         } while (currentTime <= time);
 
         transform.localScale = destinationScale;
+
+        if (destroyOnFinish)
+        {
+            Destroy(gameObject);
+        }
+
     }
 }

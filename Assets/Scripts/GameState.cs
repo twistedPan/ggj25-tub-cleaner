@@ -175,7 +175,6 @@ public class GameState : MonoBehaviour
 
         if (bubble.SoapAmount == 0) {
             Bubbles.Remove(bubble);
-            bubble.gameObject.SetActive(false);
         }
         
     }

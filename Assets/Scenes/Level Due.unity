@@ -2987,14 +2987,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 627556911, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: useUI
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 627556911, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: carSpeedText
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -130.1
@@ -3035,41 +3027,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 297466663063444621, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_Name
       value: Prometheus
       objectReference: {fileID: 0}
-    - target: {fileID: 8028304783598008792, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: EndPitch
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8028304783598008792, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: MaxPitch
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8028304783598008792, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: MinPitch
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8028304783598008792, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: EndVolume
-      value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 8028304783598008792, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: MaxVolume
-      value: 0.8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7401984684126107114, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1692620516}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
 --- !u!4 &1080923322 stripped
 Transform:
@@ -4618,12 +4583,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db414b4382c2fb94b971e253559450f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameValues: {fileID: 11400000, guid: 1b528e6d655b99a4cae0a0fb559f9911, type: 2}
   carController: {fileID: 1097460583}
   carCamTransform: {fileID: 1452296737}
   CameraTarget: {fileID: 1010616121}
   CameraTargetOrigin: {x: 0, y: 0, z: 0}
-  OffsetDamping: 2
-  OffsetFactor: 3
   applyOffset: 1
   carForwartVec: {x: 0, y: 0, z: 0}
   cross: {x: 0, y: 0, z: 0}
@@ -5639,36 +5603,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
   m_PrefabInstance: {fileID: 608135543}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1692620512 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7401984684126107114, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-  m_PrefabInstance: {fileID: 1065578273}
-  m_PrefabAsset: {fileID: 0}
---- !u!169 &1692620516
-AudioLowPassFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1692620512}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_LowpassResonanceQ: 1
-  lowpassLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.116871305
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &1701423750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6866,10 +6800,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4532518121971368637, guid: c63c5efa234a27348a2d49c12c1e2fcb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4532518121971368637, guid: c63c5efa234a27348a2d49c12c1e2fcb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

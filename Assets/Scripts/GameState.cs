@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameState : MonoBehaviour
 {   
+    public bool EndlessMode = false;
     public int LevelTime = 60;
     public int SoapAmount = 100;
 
@@ -45,15 +46,18 @@ public class GameState : MonoBehaviour
         LevelTimerText.text = _timeLeft.ToString();
         SoapAmountText.text = SoapAmount.ToString();
 
+
+        if (EndlessMode)
+        {
+            LevelTimerText.enabled = false;
+        }
+
         // Find 
         deathDetector = FindFirstObjectByType<DeathDetector>();
-        Debug.Log("Death Detector: " + deathDetector);
-        Debug.Log("Death OnPlayerDied: " + deathDetector.OnPlayerDied);
         deathDetector.OnPlayerDied += OnGameOver;
     }
 
     void OnGameOver() {
-        Debug.Log("Game Over");
 
         GameOverText.SetRandomText();
         
@@ -152,6 +156,22 @@ public class GameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Warn if amount of total soap is less than remaining dirt strength
+        if (_availableSoapAmount + SoapAmount < _totalDirtStrength)
+        {
+            SoapAmountText.color = Color.red;
+        }
+        else
+        {
+            SoapAmountText.color = Color.black;
+        }
+
+
+        if (EndlessMode)
+        {
+            return;
+        }
+
         _timeLeft -= Time.deltaTime;
         LevelTimerText.text = _timeLeft.ToString("0");
 
@@ -165,13 +185,5 @@ public class GameState : MonoBehaviour
                 OnGameOver();
             }
         }
-
-        // Warn if amount of total soap is less than remaining dirt strength
-        if (_availableSoapAmount + SoapAmount < _totalDirtStrength) {
-            SoapAmountText.color = Color.red;
-        } else {
-            SoapAmountText.color = Color.black;
-        }
-       
     }
 }

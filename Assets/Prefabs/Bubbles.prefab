@@ -46,9 +46,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7528105891504964425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe0cb744b5fcab42862f3e6a73f28f5, type: 3}
+  m_Script: {fileID: 11500000, guid: da515cb0c62e04e38bbe9dab8560972e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameValues: {fileID: 11400000, guid: 1b528e6d655b99a4cae0a0fb559f9911, type: 2}
+  SoapAmount: 100
+  SetSoapAmountBasedOnArea: 1
 --- !u!33 &640761033304792349
 MeshFilter:
   m_ObjectHideFlags: 0

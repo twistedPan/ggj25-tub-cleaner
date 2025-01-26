@@ -1,19 +1,22 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+    public GameValues GameValues;
     [SerializeField] private GameObject mainView;
     [SerializeField] private GameObject creditsView;
+    private MenuSponge menuSponge;
     
     void Awake() 
     {
         Cursor.visible = true;
+        menuSponge = FindFirstObjectByType<MenuSponge>();
     }
     
-    public void PlayGame()
+    public void PlayGame(int level)
     {
-        //Debug.Log("Play Game");
         Cursor.visible = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -38,6 +41,12 @@ public class MenuScript : MonoBehaviour
 
     public void LoadSceneName(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        Debug.Log("Loading scene: " + sceneName);
+        menuSponge.GoGoSpongeBoy(() => SceneManager.LoadScene(sceneName));
+    }
+
+    public void EndlessMode(bool value)
+    {
+        GameValues.EndlessMode = value;
     }
 }

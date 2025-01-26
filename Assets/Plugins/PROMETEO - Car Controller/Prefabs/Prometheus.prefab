@@ -271,7 +271,7 @@ MonoBehaviour:
   brakeForce: 450
   decelerationMultiplier: 2
   handbrakeDriftMultiplier: 5
-  soapyDriftModifier: 0
+  soapinessDriftModifier: 0
   bodyMassCenter: {x: 0, y: 0, z: 0}
   frontLeftMesh: {fileID: 8649133034589738184}
   frontLeftCollider: {fileID: 2239677824950174677}
@@ -1851,10 +1851,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftTireSmoke_PS
       objectReference: {fileID: 0}
-    - target: {fileID: 4121091811543088291, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4121091811543137509, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.3
@@ -2169,10 +2165,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222883965140413210, guid: 1fcfe9d539bde44f5879b9b22bf30091, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4222883965140413211, guid: 1fcfe9d539bde44f5879b9b22bf30091, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

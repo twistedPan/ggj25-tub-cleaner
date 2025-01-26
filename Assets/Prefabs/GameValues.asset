@@ -15,8 +15,8 @@ MonoBehaviour:
   MaxSpeed: 300
   BaseAcceleration: 20
   MaxSoapedAcceleration: 10
-  CamTargetDistanceZ: -5
-  CamTargetDistanceY: 3
+  CamTargetDistanceZ: -8
+  CamTargetDistanceY: 5
   CamDistanceZ: 8
   VerticalArmLength: 0.8
   OffsetDamping: 2
@@ -24,5 +24,5 @@ MonoBehaviour:
   MaxSoapCapacity: 100
   SoapReplenishmentCapacity: 100
   DirtCleaningCost: 10
-  TimeLimitInSeconds: 60
-  EndlessMode: 1
+  TimeLimitInSeconds: 90
+  EndlessMode: 0

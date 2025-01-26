@@ -44,6 +44,7 @@ public class MenuScript : MonoBehaviour
     public void LoadSceneName(string sceneName)
     {
         Debug.Log("Loading scene: " + sceneName);
+        Cursor.visible = false;
         menuSponge.GoGoSpongeBoy(() => SceneManager.LoadScene(sceneName));
     }
 

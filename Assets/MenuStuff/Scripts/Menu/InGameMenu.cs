@@ -6,8 +6,8 @@ public class InGameMenu : MonoBehaviour
 {
     private CanvasGroup _canvasGroup;
     private bool _menuOpen = false;
-    
-    
+
+
     public string MainMenuSceneName;
 
     InputAction openIngameMenu;
@@ -40,7 +40,7 @@ public class InGameMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if (openIngameMenu.WasPressedThisFrame())
+        if (openIngameMenu.WasPressedThisFrame())
         {
             if (_menuOpen)
             {
@@ -50,25 +50,27 @@ public class InGameMenu : MonoBehaviour
             {
                 OpenMenu();
             }
-    }
+        }
 
-    void OpenMenu()
-    {
-        // Open the ingame menu
-        Debug.Log("Opening Ingame Menu");
-        _canvasGroup.alpha = 1;
-        _canvasGroup.interactable = true;
-        _menuOpen = true;
-    }
+        void OpenMenu()
+        {
+            // Open the ingame menu
+            Debug.Log("Opening Ingame Menu");
+            _canvasGroup.alpha = 1;
+            Cursor.visible = true;
+            _canvasGroup.interactable = true;
+            _menuOpen = true;
+        }
 
-    void CloseMenu()
-    {
-        // Close the ingame menu
-        Debug.Log("Closing Ingame Menu");
-        _canvasGroup.alpha = 0;
-        _canvasGroup.interactable = false;
-        _menuOpen = false;
-    }
+        void CloseMenu()
+        {
+            // Close the ingame menu
+            Debug.Log("Closing Ingame Menu");
+            _canvasGroup.alpha = 0;
+            Cursor.visible = false;
+            _canvasGroup.interactable = false;
+            _menuOpen = false;
+        }
 
-}
+    }
 }

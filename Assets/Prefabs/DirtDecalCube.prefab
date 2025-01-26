@@ -4842,7 +4842,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3602413235724400506}
-  - component: {fileID: 6071987045438255482}
   - component: {fileID: 2363998064264517423}
   - component: {fileID: 3822980428230592016}
   - component: {fileID: 8327137476626531044}
@@ -4870,22 +4869,6 @@ Transform:
   - {fileID: 3970249188861970694}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90.839, y: 0, z: 0}
---- !u!114 &6071987045438255482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7896380076431745714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a19f57b32df6447269faa969e65e1bf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameValues: {fileID: 11400000, guid: 1b528e6d655b99a4cae0a0fb559f9911, type: 2}
-  MaxDirtStrength: 1
-  DirtStrength: 1
-  SetDirtStrengthBasedOnArea: 1
 --- !u!33 &2363998064264517423
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -47,7 +47,7 @@ public class GameState : MonoBehaviour
 
         if (GameValues.EndlessMode)
         {
-            LevelTimerText.enabled = false;
+            LevelTimerText.gameObject.SetActive(false);
         }
 
         // Find 

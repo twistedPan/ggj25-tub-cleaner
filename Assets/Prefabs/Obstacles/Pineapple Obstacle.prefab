@@ -115,7 +115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3910990755373119420, guid: 7d9bb32be92964198bc3597d4e6631fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.26
+      value: -0.205
       objectReference: {fileID: 0}
     - target: {fileID: -3910990755373119420, guid: 7d9bb32be92964198bc3597d4e6631fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -149,6 +149,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.77
       objectReference: {fileID: 0}
+    - target: {fileID: 5239624288543662759, guid: 7d9bb32be92964198bc3597d4e6631fc, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 61f01389e2e11664bad68427a9d46366, type: 2}
     - target: {fileID: 8771091787928289351, guid: 7d9bb32be92964198bc3597d4e6631fc, type: 3}
       propertyPath: m_Name
       value: pineapple_decimated

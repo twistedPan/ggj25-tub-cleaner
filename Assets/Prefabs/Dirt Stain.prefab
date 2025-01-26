@@ -1,0 +1,726 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8173589711644715892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8430823848029640997}
+  m_Layer: 0
+  m_Name: Dirt Stain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8430823848029640997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8173589711644715892}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -163.4, y: 0, z: 40.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2304853076107096866}
+  - {fileID: 8537536858182724481}
+  - {fileID: 535329257325219627}
+  - {fileID: 3672014845697359976}
+  - {fileID: 9062871606920853673}
+  - {fileID: 1918439609333585098}
+  - {fileID: 5619374853778831574}
+  - {fileID: 6335209973214029580}
+  - {fileID: 34424761092035114}
+  - {fileID: 6142104825987078072}
+  - {fileID: 5157934486488400212}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &219490886583858962
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.81010437
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -46.837627
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.3700485
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.42682657
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19329013
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.80476195
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.36443967
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 124.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &3672014845697359976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 219490886583858962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3126058245611496368
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7699127
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -50.419437
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.19994736
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4623411
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.2947754
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7051433
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.44957903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.497
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &1918439609333585098 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 3126058245611496368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3315261106746868824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9999237
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -49.195263
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9000473
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49983016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.22499764
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7626785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3433183
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.521
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &2304853076107096866 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 3315261106746868824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3568006367746385232
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.99009705
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -50.185883
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.289959
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4623411
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.2947754
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7051433
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.44957903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.497
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &34424761092035114 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 3568006367746385232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3932637394963724369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.890091
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -46.91196
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7200394
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49983016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.22499764
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7626785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3433183
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.521
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &535329257325219627 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 3932637394963724369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5153590535617617147
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.71009827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -48.768005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.18005371
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49983016
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.22499764
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7626785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3433183
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.521
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &8537536858182724481 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 5153590535617617147}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5493158400000331731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7299042
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -48.353382
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.0400505
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.42682657
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.19329013
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.80476195
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.36443967
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 124.119
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &9062871606920853673 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 5493158400000331731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7260774620878905538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8100739
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -48.902218
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7299614
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49989894
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.22531433
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.76240003
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.34362873
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.495
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &6142104825987078072 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 7260774620878905538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7355917679026999414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0299072
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -51.69626
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.50996
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4625835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.29553607
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.704385
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4500186
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.413
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &6335209973214029580 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 7355917679026999414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8532911539712456238
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.8100739
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -48.902218
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7299614
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49989894
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.22531433
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.76240003
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.34362873
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.495
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &5157934486488400212 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 8532911539712456238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8935793019382878124
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8430823848029640997}
+    m_Modifications:
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2299042
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -50.734505
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.1399612
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4623411
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.2947754
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7051433
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.44957903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.497
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896380076431745714, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+      propertyPath: m_Name
+      value: DirtDecalCube (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+--- !u!4 &5619374853778831574 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3602413235724400506, guid: 4d8b2f4a81dd147ab90428e928b7f3c3, type: 3}
+  m_PrefabInstance: {fileID: 8935793019382878124}
+  m_PrefabAsset: {fileID: 0}

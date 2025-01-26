@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &65509502
 RectTransform:
   m_ObjectHideFlags: 0
@@ -289,10 +289,10 @@ RectTransform:
   - {fileID: 1090131642}
   m_Father: {fileID: 319717834}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -344}
-  m_SizeDelta: {x: 552.8, y: 115}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &65509503
 MonoBehaviour:
@@ -1975,8 +1975,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 97.2}
-  m_SizeDelta: {x: 1520, y: 800}
+  m_AnchoredPosition: {x: 0, y: 54.7}
+  m_SizeDelta: {x: 1881.71, y: 964.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &975661245
 MonoBehaviour:
@@ -1998,58 +1998,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Developer Team:
-
-
-
-    What is Lorem Ipsum?
-
-
-
-    Lorem Ipsum is simply
-    dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-    industry''s standard dummy text ever since the 1500s, when an unknown printer
-    took a galley of type and scrambled it to make a type specimen book. It has survived
-    not only five centuries, but also the leap into electronic typesetting, remaining
-    essentially unchanged. It was popularised in the 1960s with the release of Letraset
-    sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-    software like Aldus PageMaker including versions of Lorem Ipsum.
-
-    Why do
-    we use it?
-
-
-
-    It is a long established fact that a reader will be distracted
-    by the readable content of a page when looking at its layout. The point of using
-    Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-    opposed to using ''Content here, content here'', making it look like readable
-    English. Many desktop publishing packages and web page editors now use Lorem
-    Ipsum as their default model text, and a search for ''lorem ipsum'' will uncover
-    many web sites still in their infancy. Various versions have evolved over the
-    years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-
-    Where
-    does it come from?
-
-
-
-    Contrary to popular belief, Lorem Ipsum is not simply
-    random text. It has roots in a piece of classical Latin literature from 45 BC,
-    making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-    College in Virginia, looked up one of the more obscure Latin words, consectetur,
-    from a Lorem Ipsum passage, and going through the cites of the word in classical
-    literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
-    and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory
-    of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-    "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-
-
-'
+  m_text: "Developer Team:\n\r\nddublin - Programming, Art, Music, Sounds \nwawahaha
+    - Programming, Art \nRedZeroRay - Programming, Art\n\nAssets and Resources:\r\nCar
+    Controller:\r\nPROMOTEO Car Controller by Mena\r\n\r\nSound Effects:\r\n\r\n   
+    \"Bubble Sound Effect\" by TP Tube \r\n\r\nGraphics/Textures:\r\n\r\n    \"Sponge\"
+    by Aullwen \r\n    \"Sink\" by JuanG3D \r\n    \"Bathtub\"  by 3ddominator \r\n   
+    \"Pineapple\" by Lassi Kaukonen \r\n    \"Patrick's House (Spongebob)\"  by Anthony
+    Yanez \r\n    \"Squidward's House (Spongebob)\"  by Anthony Yanez \r\n    \"Ugly
+    Squidward\" by ryad_raba \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2076,8 +2032,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 32.2
+  m_fontSizeBase: 32.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2350,7 +2306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68552387, g: 0.60875756, b: 0.754717, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

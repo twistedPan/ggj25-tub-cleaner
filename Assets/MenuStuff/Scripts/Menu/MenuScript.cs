@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
     public GameValues GameValues;
     [SerializeField] private GameObject mainView;
     [SerializeField] private GameObject creditsView;
+    [SerializeField] private Toggle endlessToggle;
     private MenuSponge menuSponge;
     
     void Awake() 
@@ -45,8 +47,9 @@ public class MenuScript : MonoBehaviour
         menuSponge.GoGoSpongeBoy(() => SceneManager.LoadScene(sceneName));
     }
 
-    public void EndlessMode(bool value)
+    public void EndlessMode(Toggle value)
     {
-        GameValues.EndlessMode = value;
+        Debug.Log("Endless mode: " + value.isOn);
+        GameValues.EndlessMode = value.isOn;
     }
 }

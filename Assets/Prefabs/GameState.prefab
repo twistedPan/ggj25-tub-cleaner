@@ -640,8 +640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34f8517cb4774234b45c3488e338963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelTime: 60
-  SoapAmount: 73
+  GameValues: {fileID: 11400000, guid: 1b528e6d655b99a4cae0a0fb559f9911, type: 2}
+  CurrentSoapAmount: 100
   _availableSoapAmount: 0
   _timeLeft: 0
   Stains: []

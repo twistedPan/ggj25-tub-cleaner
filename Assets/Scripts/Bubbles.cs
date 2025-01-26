@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 public class Bubble : MonoBehaviour
 {
+    public GameValues GameValues;
     private GameState _gameState;
 
     public int SoapAmount = 100;
@@ -19,6 +20,10 @@ public class Bubble : MonoBehaviour
         if (SetSoapAmountBasedOnArea) {
             // Set the soap amount based on the area
             SoapAmount = GetArea();
+        }
+        else
+        {
+            SoapAmount = GameValues.SoapReplenishmentCapacity;
         }
 
         _startingSoapAmount = SoapAmount;

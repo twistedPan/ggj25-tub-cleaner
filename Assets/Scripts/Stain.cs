@@ -4,6 +4,7 @@ using Unity.Mathematics;
 
 public class Stain : MonoBehaviour
 {
+    public GameValues GameValues;
     public int MaxDirtStrength = 1;
     public int DirtStrength = 1;
 
@@ -26,6 +27,11 @@ public class Stain : MonoBehaviour
             // Set the dirt strength based on the area
             DirtStrength = GetArea();
             MaxDirtStrength = DirtStrength;
+        }
+        else
+        {
+            DirtStrength = GameValues.DirtCleaningCost;
+            MaxDirtStrength = GameValues.DirtCleaningCost;
         }
 
         _gameState.RegisterStain(this);
@@ -55,7 +61,7 @@ public class Stain : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         // If the object that collided with this stain is the player
-        Debug.Log("Collision detected with: " + other.gameObject.tag);
+        //Debug.Log("Collision detected with: " + other.gameObject.tag);
         if (other.gameObject.tag == "Player") {
 
             _driftRubSFX.PlayRandomSqueeekSFX();
@@ -64,7 +70,7 @@ public class Stain : MonoBehaviour
             _gameState.RemoveStain(this);
         } 
 
-        Debug.Log("Remaing dirt of max dirt: " + DirtStrength + " " + MaxDirtStrength +" Name: " + gameObject.name);
+        //Debug.Log("Remaing dirt of max dirt: " + DirtStrength + " " + MaxDirtStrength +" Name: " + gameObject.name);
         _decalProjector.fadeFactor = math.max((float)DirtStrength / MaxDirtStrength, 0.3f);
     }
 }

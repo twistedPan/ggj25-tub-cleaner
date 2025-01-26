@@ -69,8 +69,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da515cb0c62e04e38bbe9dab8560972e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameValues: {fileID: 11400000, guid: 1b528e6d655b99a4cae0a0fb559f9911, type: 2}
   SoapAmount: 100
-  SetSoapAmountBasedOnArea: 1
+  SetSoapAmountBasedOnArea: 0
 --- !u!114 &7645704852239871377
 MonoBehaviour:
   m_ObjectHideFlags: 0

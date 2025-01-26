@@ -2023,12 +2023,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db414b4382c2fb94b971e253559450f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameValues: {fileID: 11400000, guid: 1b528e6d655b99a4cae0a0fb559f9911, type: 2}
   carController: {fileID: 1097460583}
   carCamTransform: {fileID: 1452296737}
   CameraTarget: {fileID: 1010616121}
   CameraTargetOrigin: {x: 0, y: 0, z: 0}
-  OffsetDamping: 2
-  OffsetFactor: 3
   applyOffset: 1
   carForwartVec: {x: 0, y: 0, z: 0}
   cross: {x: 0, y: 0, z: 0}

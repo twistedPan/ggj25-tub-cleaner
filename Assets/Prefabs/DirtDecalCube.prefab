@@ -92,9 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a19f57b32df6447269faa969e65e1bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameValues: {fileID: 11400000, guid: 1b528e6d655b99a4cae0a0fb559f9911, type: 2}
   MaxDirtStrength: 1
   DirtStrength: 1
-  SetDirtStrengthBasedOnArea: 1
+  SetDirtStrengthBasedOnArea: 0
 --- !u!65 &5366979844763408364
 BoxCollider:
   m_ObjectHideFlags: 0

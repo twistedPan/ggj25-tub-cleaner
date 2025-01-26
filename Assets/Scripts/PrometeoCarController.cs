@@ -167,7 +167,7 @@ public class PrometeoCarController : MonoBehaviour
     {
 
         _gameState = GameObject.Find("GameState").GetComponent<GameState>();
-        soapyDriftModifier = _gameState.SoapAmount / 100;
+        soapyDriftModifier = _gameState.CurrentSoapAmount / 100;
 
         //In this part, we set the 'carRigidbody' value with the Rigidbody attached to this
         //gameObject. Also, we define the center of mass of the car with the Vector3 given

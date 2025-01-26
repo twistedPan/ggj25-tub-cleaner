@@ -35,4 +35,9 @@ public class MenuScript : MonoBehaviour
         mainView.SetActive(true);
         creditsView.SetActive(false);
     }
+
+    public void LoadSceneName(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }

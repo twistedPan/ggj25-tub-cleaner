@@ -92,6 +92,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: Texts.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[0]'
+      value: You dirt...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[1]'
+      value: You're a dirty sponge.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[2]'
+      value: You are soapless.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[3]'
+      value: You have shamed your sponge fathers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[4]'
+      value: Maybe more soap next time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[5]'
+      value: Sapo iacta est.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[6]'
+      value: Do not scrub quietly into the good grime.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[7]'
+      value: You will be replaced by a sponge bot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[8]'
+      value: Desoaped.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

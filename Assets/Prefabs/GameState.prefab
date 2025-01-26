@@ -642,11 +642,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameValues: {fileID: 11400000, guid: 1b528e6d655b99a4cae0a0fb559f9911, type: 2}
   CurrentSoapAmount: 100
-  _availableSoapAmount: 0
   _timeLeft: 0
+  _availableSoapAmount: 0
+  _totalDirtStrength: 0
   Stains: []
   Bubbles: []
-  _totalDirtStrength: 0
   StainCountText: {fileID: 7836169956446738568}
   TotalDirtStrengthText: {fileID: 6465052663444172250}
   LevelTimerText: {fileID: 1694846608312250364}

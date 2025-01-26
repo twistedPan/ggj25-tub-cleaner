@@ -142,12 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec24b69e058c94d6f9946446c5eb94cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Texts:
-  - You're a dirty sponge.
-  - You are soapless.
-  - You have shamed your sponge fathers.
-  - You dirt...
-  - Maybe more soap next time...
+  Texts: []
 --- !u!1 &3685485690336499876
 GameObject:
   m_ObjectHideFlags: 0

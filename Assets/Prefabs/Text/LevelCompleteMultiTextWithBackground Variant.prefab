@@ -126,7 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
       propertyPath: Texts.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
       propertyPath: 'Texts.Array.data[0]'
@@ -143,6 +143,10 @@ PrefabInstance:
     - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
       propertyPath: 'Texts.Array.data[3]'
       value: You clean freak!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6518018083048753449, guid: 8d8f774faea8e41d592bdc80daa855f3, type: 3}
+      propertyPath: 'Texts.Array.data[4]'
+      value: Dirty Harry.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 5845850473271432274}
   serializedVersion: 2
   m_LocalRotation: {x: 0.1633827, y: -0.7981211, z: -0.24896768, w: 0.52375937}
-  m_LocalPosition: {x: 0.00000053043317, y: 0.0000007260776, z: -0.0000010505543}
+  m_LocalPosition: {x: 0, y: -0.041, z: -0.029}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4933,7 +4933,7 @@ GameObject:
   - component: {fileID: 3822980428230592016}
   - component: {fileID: 8327137476626531044}
   - component: {fileID: 8499321639905897035}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: DirtDecalCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

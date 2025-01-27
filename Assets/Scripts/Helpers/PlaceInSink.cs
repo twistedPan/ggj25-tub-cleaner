@@ -7,7 +7,7 @@ public class PlaceInSink : MonoBehaviour
         var startPos = transform.position + Vector3.up * 2;
         if (Physics.Raycast(startPos, -transform.forward, out RaycastHit hit, 1000f))
         {
-            transform.SetPositionAndRotation(hit.point, Quaternion.LookRotation(hit.normal, Vector3.up));        
+            transform.SetPositionAndRotation(hit.point, Quaternion.LookRotation(hit.normal, Vector3.up));
         }
         else
         {

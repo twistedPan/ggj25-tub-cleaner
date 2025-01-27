@@ -4843,9 +4843,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3602413235724400506}
   - component: {fileID: 2363998064264517423}
+  - component: {fileID: 5366979844763408364}
   - component: {fileID: 3822980428230592016}
   - component: {fileID: 8327137476626531044}
-  - component: {fileID: 5366979844763408364}
+  - component: {fileID: 8499321639905897035}
   m_Layer: 0
   m_Name: DirtDecalCube
   m_TagString: Untagged
@@ -4877,6 +4878,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7896380076431745714}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &5366979844763408364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7896380076431745714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3822980428230592016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4917,24 +4939,15 @@ MonoBehaviour:
   MaxDirtStrength: 1
   DirtStrength: 1
   SetDirtStrengthBasedOnArea: 0
---- !u!65 &5366979844763408364
-BoxCollider:
+--- !u!114 &8499321639905897035
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7896380076431745714}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe0cb744b5fcab42862f3e6a73f28f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
